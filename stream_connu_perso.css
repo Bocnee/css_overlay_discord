@@ -19,11 +19,12 @@ ul {
 }
  
 /* Permet de changer la couleur du contour en parlant */
+/* Penser à  enlever les crochets autour de "id_personne_discord" et "couleur" */
 
-.voice-container .voice-states .voice-state[data-reactid*="[id_personne_discord"] .avatar.speaking { /* Pour voir  l'ID des personnes de discord, il faut avtiver le mode développeur */
+.voice-container .voice-states .voice-state[data-reactid*="[id_personne_discord]"] .avatar.speaking { /* Pour voir  l'ID des personnes de discord, il faut avtiver le mode développeur */
     opacity: 1;
     filter: grayscale(0%);
-  outline: calc(var(--widthPX) / 20) solid [#F70000]; /* Changer la couleur  ici */
+  outline: calc(var(--widthPX) / 20) solid [couleur]; /* Changer la couleur  ici /!\ enlever les crochets autour de la  couleur */
     outline-offset: calc(var(--widthPX) / 20 -1);
  
 }
@@ -60,7 +61,7 @@ ul {
 /* Changer le fond du pseudo encore avec l'ID  */ 
 /* ligne 21 pour l'explication des IDs */
 
-.voice-container .voice-states .voice-state[data-reactid*="[id_user"] .user {
+.voice-container .voice-states .voice-state[data-reactid*="[id_user]"] .user {
     background-color: [couleur];
     position: absolute;
     bottom: 0px;
