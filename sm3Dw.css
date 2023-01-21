@@ -1,7 +1,6 @@
 ul {
     display: flex;
     justify-content: center;
-    gap: 2px;
     margin-top: 100px;
 }
 
@@ -16,6 +15,7 @@ li {
     width: 80%;
     height: auto;
     border-radius: 0%;
+    filter: grayscale(1);
 }
 
 .Voice_user__8fGwX {
@@ -30,21 +30,25 @@ li {
 }
 
 /* Trillian */
-.Voice_avatarSpeaking__lE\+4m[src*="[discord_id]"]{
+.Voice_avatarSpeaking__lE\+4m[src*="208138826143498241"]{
     border: 4px solid #F70000!important;
+    filter: grayscale(0);
 }
 
 /* Océane */
-.Voice_avatarSpeaking__lE\+4m[src*="[discord_id]"]{
+.Voice_avatarSpeaking__lE\+4m[src*="506523389578706966"]{
     border: 6px solid #3E509D!important;
+    filter: grayscale(0);
 }
 
 /* Lumi */
-.Voice_avatarSpeaking__lE\+4m[src*="[discord_id]"]{
+.Voice_avatarSpeaking__lE\+4m[src*="199207531984322570"]{
     border: 4px solid #DA477E!important;
+    filter: grayscale(0);
 }
 
 /* Joël */
-.Voice_avatarSpeaking__lE\+4m[src*="[discord_id]"]{
+.Voice_avatarSpeaking__lE\+4m[src*="100659526763577344"]{
     border: 4px solid #198F0D!important;
+    filter: grayscale(0);
 }
