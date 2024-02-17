@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-style: normal;
+  background: {background_color};
+  font-family: "Coming Soon", cursive;
+  font-size: {font_size};
+  line-height: 1.5em;
+  font-weight: 400;
+  color: {text_color};
+}
+
+#log > div {
+  border-radius: 25px;
+  animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+  -webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+  background-color: #fff;
+  width: 96%;
+}
+
+.colon {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+#log {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: table;
+  width: 100%;
+  padding: 0.5rem;
+  table-layout: fixed;
+}
+
+#log > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#log > div.deleted {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#log .emote {
+  position: relative;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0.4em 0.2em;
+}
+
+#log .emote img {
+  opacity: 0;
+  display: inline-block;
+  height: 1em;
+}
+
+#log .message,
+#log .meta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 0.1em;
+  vertical-align: top;
+}
+
+#log .meta {
+  margin-bottom: 0.5rem;
+  width: 90%;
+  overflow: hidden;
+  padding-right: 0.5em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-shadow: 0 0 1px #000, 0 0 2px #000;
+}
+
+#log .message {
+  position: relative;
+  border-radius: 0 0 25px 25px;
+  margin-bottom: 0;
+  background-color: #a571ad;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  word-wrap: break-word;
+  color: #fff;
+}
+
+#log .message::before {
+  position: absolute;
+  top: -10px;
+  left: 50px;
+  content: "";
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #a571ad transparent;
+}
+
+.badge {
+  position: relative;
+  top: -0.1em;
+  display: inline-block;
+  margin-right: 0.2em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+.name {
+  margin: 0;
+  padding: 0.5rem;
+  font-weight: bold;
+}
